@@ -1,4 +1,3 @@
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -51,7 +50,7 @@ public class Global extends GlobalSettings {
     @Override
     public void onStop(final Application app) {
         // This will call any destruction lifecycle methods and then release the beans e.g. @PreDestroy
-        ctx.stop();
+        ctx.close();
 
         super.onStop(app);
     }
