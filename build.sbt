@@ -1,10 +1,12 @@
+import play.PlayJava
+
 name := "play-spring-data-jpa"
 
 version := "1.0-SNAPSHOT"
 
-playJavaSettings
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
-ebeanEnabled := false
+scalaVersion := "2.11.4"
 
 libraryDependencies ++= Seq(
     javaCore,
