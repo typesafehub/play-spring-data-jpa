@@ -2,9 +2,6 @@ name := "play-spring-data-jpa"
 
 version := "1.0-SNAPSHOT"
 
-playJavaSettings
-
-ebeanEnabled := false
 
 libraryDependencies ++= Seq(
     javaCore,
